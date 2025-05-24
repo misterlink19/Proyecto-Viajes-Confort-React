@@ -1,11 +1,17 @@
 // src/componentes/Navbar.js
 import React from 'react';
 
-const Navbar = ({ onAdminClick, modoAdmin }) => {
+const Navbar = ({ onAdminClick, modoAdmin,onHomeClick }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container">
-        <a className="navbar-brand d-flex align-items-center" href="#">
+        <a className="navbar-brand d-flex align-items-center" href="#"
+       onClick={(e) => {
+            e.preventDefault();
+            onHomeClick();
+          }}
+          style={{ cursor: 'pointer' }} 
+        >
           <img src="/img/logo.jpg" alt="Viaje Confort Logo" className="img-fluid rounded me-2" style={{ maxHeight: '50px' }}/>
           Viaje Confort
         </a>

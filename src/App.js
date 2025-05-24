@@ -166,6 +166,12 @@ function App() {
   const [mostrarModalCategoria, setMostrarModalCategoria] = useState(false);
   const [toasts, setToasts] = useState([]);
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
+  
+  //  Función para Restablecer la vista a "Inicio"
+  const resetAppToHome = () => {
+    setModoAdmin(false);             // Sale del modo admin
+    setCategoriaSeleccionada(null);  // Muestra todas las categorías (el estado por defecto de "inicio")
+  };
 
   // Función para mostrar notificaciones
   const mostrarNotificacion = (mensaje, tipo) => {
@@ -264,6 +270,7 @@ function App() {
             mostrarNotificacion("Contraseña incorrecta", "danger");
           }
         }}
+        onHomeClick={resetAppToHome} 
       />
 
       {/* Panel de Administración (visible solo en modo admin) */}
