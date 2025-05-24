@@ -38,7 +38,7 @@ const AdminCategoriaModal = ({
     }
   }, [show]);
 
-  // 🚀 Agregar Categoría
+  //  Agregar Categoría
   const handleAddCategorySubmit = (e) => {
     e.preventDefault();
     const nombreValido = addCategoryName.trim();
@@ -59,7 +59,7 @@ const AdminCategoriaModal = ({
     }
   };
 
-  // 🚀 Editar Categoría
+  // Editar Categoría
   const handleEditCategoryChange = (e) => {
     const categoryId = e.target.value;
     setSelectedCategoryToEdit(categoryId);
