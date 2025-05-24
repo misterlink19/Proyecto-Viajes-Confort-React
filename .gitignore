@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+Proyecto#3.txt
+sonar-project.properties
+.scannerwork/.sonar_lock
+.scannerwork/report-task.txt
