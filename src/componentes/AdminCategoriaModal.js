@@ -94,7 +94,7 @@ const AdminCategoriaModal = ({
     }
   };
 
-  // 🚀 Eliminar Categoría con verificación de productos
+  // Eliminar Categoría con verificación de productos
   const handleDeleteCategoryChange = (e) => {
     setSelectedCategoryToDelete(e.target.value);
     setShowDeleteWarning(false); // Resetear advertencia al cambiar la selección
